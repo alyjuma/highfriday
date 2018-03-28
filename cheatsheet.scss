@@ -1,0 +1,128 @@
+//SASS SYNTAX CHEAT SHEET
+
+//COMMENTS
+//comments using slashes ala javascript never show up in processed style sheet
+/*Traditional CSS comments will show up unless stripped.*/
+
+
+//VARIABLES
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+//fonts
+$font-main: 'Lato', sans-serif;
+
+//colors
+$blue:  #403ac4;
+
+//can adjust colors by values, filters, etc
+//darken, lighten, saturate, complement, opacity, and so on
+$light-blue: lighten($blue, 10);
+
+//can define list of elements, fonts, etc and call to simplify css
+//lists are not zero indexed, start at 1
+$padding-main: 20px 20px 20px 20px;
+
+//using variables
+.quote {
+  color:$color-h1;
+  font-size:72px;
+  font-family: $font-main;
+  font-weight:700;
+  padding: $padding-main;
+}
+
+//NESTING & EXTENDING
+//extended example. Essentially takes base style and applies changes to it.
+//allows you to only call the extension, not both in html
+//can use mixins as well, but this is a little easier
+.quote-home {
+  @extend .quote;
+  font-size: 90px;
+}
+
+//nesting example, don't nest too deep, general rule
+.group {
+  background-color:$light-blue;
+  padding: $padding-main;
+  color:white;
+  h2 {
+    font-size:30px;
+    font-family: $font-main;
+  }
+  p {
+    font-family: $font-main;
+  }
+  ul {
+    font-family: $font-main;
+    text-decoration:none;
+    text-transform:uppercase;
+  }
+
+//nesting with variation builders, create helpers this way
+.padding {
+  &--1x {
+    padding:1rem;
+  }
+
+  &--2x {
+    padding:2rem;
+  }
+}
+
+  //conditional class, if parent is inside id/class, then apply css
+  #main & {
+    color:red;
+  }
+}
+
+
+
+//MIXINS
+//follow argument with :value to set default if not defined.
+//sample mixin for background image - could be useful for parallax, gradients, heros, etc.
+@mixin backgroundImage($image, $height:100vh) {
+  background: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.6)), url($image);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: $height;
+}
+
+//call mixin in other stylesheets by using
+@include backgroundImage('../images/backgroundStock.jpeg',300px);
+
+//example of mixin that can run content based on parameter
+//so at breakpoint, code will run
+@mixin break ($length) {
+  @media (min-width: $length) {
+    @content;
+  }
+}
+
+//Conditional mixins enabled with ... accepts series of args
+//@if creates conditional then executes code
+//@else for final option
+@mixin break ($args...) {
+  @if length($args) == 1 {
+    @media (min-width: nth($args, 1)) {
+      @content;
+    }
+  }
+
+  @if length($args) == 2 {
+    @media (min-width: nth($args, 1))
+    and (max-width: nth($args,2)) {
+      @content;
+    }
+  }
+}
+
+//example of for loop to apply colors, seems unnecessary
+//@each is another way to cycle content when you don't know length
+$color-headlines: blue, red, orange, black, green;
+
+@for $item from 1 through length($color-headlines) {
+  h#{$item} {
+    color:nth($color-headlines, $item);
+  }
+}
