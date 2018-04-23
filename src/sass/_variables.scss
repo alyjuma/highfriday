@@ -1,15 +1,23 @@
 //scss variables
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+@font-face {
+font-family: "Franchise";
+src: url("../fonts/franchise-bold.ttf");
+}
 
 //fonts
-$font-main: 'Lato', sans-serif;
+$font-main: 'Roboto', sans-serif;
+$font-display: 'Franchise', sans-serif;
 
 
 //colors
 $black:   #000;
 $primary: #21409a;
 $secondary: #f26522;
+$orange: #f26522;
+$blue: #21409a;
 
 
 

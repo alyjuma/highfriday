@@ -7,9 +7,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name | Description</title>
+    <title>High Friday | Design by Aly Juma</title>
 
     <!-- src/index.html -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
     <!--[htmlclean-protect]-->
     <!-- inject:css -->
@@ -18,10 +21,13 @@
 
   </head>
 
+
+<!--************************************Loading Screen*******************************************-->
+
   <body onload="loaderFunction()">
-<!--*******************Loading Screen*********************-->
+
     <div id="loader">
-        <img class="splashlogo" src="./images/hfanimate.gif">
+        <img class="splashlogo" src="./images/hfblue.gif">
         <div class="loading">
             <div class="loading__element el1">.</div>
             <div class="loading__element el2">.</div>
@@ -49,20 +55,57 @@
 
     </div>
 
-    <div id="pageContainer" class="animate-bottom">
-        <nav class="topNav">
-            <img src="./images/hflogo-notag.png" class="logo-main">
-            <div>WORK</div>
-            <div>WORDS</div>
-            <div>WEIRD</div>
+    <div id="pageContainer" class="animate-bottom" data-spy="scroll" data-target="#hamburgerToggler" data-offset="200">
+
+
+        <nav class="row fixed-top navbar-dark navbar navbar-expand-lg navbar-bg-light">
+            <a href="#home" class="navbar-brand ml-3"><img src="./images/hflogo-notag.png" alt="High Friday" class="logo-main"></a>
+
+            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#hamburgerToggler">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="hamburgerToggler">
+                <ul class="nav navbar-nav ml-auto mr-2">
+                    <li><a href="#home" class="navStyle nav-item nav-link">ABOUT</a></li>
+                    <li><a href="#portfolio" class="navStyle nav-item nav-link">SERVICES</a></li>
+                    <li><a href="#quote" class="navStyle nav-item nav-link">WORK</a></li>
+                    <li><a href="#contact" class="navStyle nav-item nav-link">WORDS</a></li>
+                    <li><a href="#contact" class="navStyle nav-item nav-link">TALK</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <h1>Welcome.</h1>
-        <p>Why we make the things we make, says a lot about who we are.</p>
+        <!-- <nav class="topNav">
+            <img src="" class="logo-main">
+            <img class="navImg" src="./images/info-icon.png">
+            <div class="navItem">WORK</div>
+            <div class="navItem">WORDS</div>
+            <div class="navItem">WEIRD</div>
+        </nav> -->
+
+        <header class="row align-items-center landingpage container-fluid" id="home">
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <img src="./images/hfsplash.png" alt="Why we make the things we make says a lot about who we are." class="splashImage">
+                <div class="mx-auto pt-3 downArrow"><a href="#portfolio"><i class="fas fa-angle-down"></i></a></div>
+            </div>
+        </header>
+
+        <section class="container-fluid" id="about">
+            <div class="row">
+                <div class="col">
+                    <h1>My name is Aly Juma.</h1>
+                    <h2>I help startups, businesses, and artists realize their vision.</h2>
+            </div>
+        </section>
+
+
     </div>
 
     <!--Javascript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 

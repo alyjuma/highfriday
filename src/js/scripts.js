@@ -2,7 +2,7 @@
 var myVar;
 
 function loaderFunction() {
-    myVar = setTimeout(showPage, 8000);
+    myVar = setTimeout(showPage, 1000);
 }
 
 function fadePage() {
@@ -13,3 +13,5 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("pageContainer").style.display = "block";
 }
+
+
