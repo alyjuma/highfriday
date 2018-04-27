@@ -11,13 +11,16 @@
 
     <!-- src/index.html -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
     <!--[htmlclean-protect]-->
     <!-- inject:css -->
     <!-- endinject -->
     <!--[/htmlclean-protect]-->
+
+
+    <!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
 
   </head>
 
@@ -55,59 +58,102 @@
 
     </div>
 
-    <div id="pageContainer" class="animate-bottom" data-spy="scroll" data-target="#hamburgerToggler" data-offset="200">
+    <div id="pageContainer" class="animate-bottom">
 
+        <header class="landingPage" id="home">
 
-        <nav class="row fixed-top navbar-dark navbar navbar-expand-lg navbar-bg-light">
-            <a href="#home" class="navbar-brand ml-3"><img src="./images/hflogo-notag.png" alt="High Friday" class="logo-main"></a>
-
-            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#hamburgerToggler">
-                <div class="navbar-toggler-icon"></div>
-            </button>
-
-            <div class="collapse navbar-collapse" id="hamburgerToggler">
-                <ul class="nav navbar-nav ml-auto mr-2">
-                    <li><a href="#home" class="navStyle nav-item nav-link">ABOUT</a></li>
-                    <li><a href="#portfolio" class="navStyle nav-item nav-link">SERVICES</a></li>
-                    <li><a href="#quote" class="navStyle nav-item nav-link">WORK</a></li>
-                    <li><a href="#contact" class="navStyle nav-item nav-link">WORDS</a></li>
-                    <li><a href="#contact" class="navStyle nav-item nav-link">TALK</a></li>
+            <nav>
+                <ul class="topNav pt-1 pb-1">
+                    <li class="navImage mx-1"><a href="#home" ><img src="/images/hflogo-notag.png" alt="High Friday" class="logo-main"></a></li>
+                    <li class="navStyle"><a href="#about">ABOUT</a></li>
+                    <li class="navStyle"><a href="#services">SERVICES</a></li>
+                    <li class="navStyle"><a href="#work">WORK</a></li>
+                    <li class="navStyle"><a href="#words">WORDS</a></li>
+                    <li class="navStyle pr-1"><a href="#talk">TALK</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- <nav class="topNav">
-            <img src="" class="logo-main">
-            <img class="navImg" src="./images/info-icon.png">
-            <div class="navItem">WORK</div>
-            <div class="navItem">WORDS</div>
-            <div class="navItem">WEIRD</div>
-        </nav> -->
+            <div class="introduction">
 
-        <header class="row align-items-center landingpage container-fluid" id="home">
-            <div class="col d-flex flex-column justify-content-center align-items-center">
-                <img src="./images/hfsplash.png" alt="Why we make the things we make says a lot about who we are." class="splashImage">
-                <div class="mx-auto pt-3 downArrow"><a href="#portfolio"><i class="fas fa-angle-down"></i></a></div>
+                    <img src="./images/hfsplash.png" alt="Why we make the things we make says a lot about who we are." class="splashImage">
+                    <div class="mx-auto pt-3 downArrow"><a href="#about"><i class="fas fa-angle-down"></i></a></div>
+
             </div>
+
         </header>
 
-        <section class="container-fluid" id="about">
-            <div class="row">
-                <div class="col">
-                    <h1>My name is Aly Juma.</h1>
-                    <h2>I help startups, businesses, and artists realize their vision.</h2>
+        <section id="about">
+            <div class="description">
+                <div class="left">
+                    <h2 class="pb-1">hi, my name is aly.</h2>
+                    <p class="display-p">High Friday is my personal design studio. It is the place I invented to do what I love...</p><br/>
+                    <p class="display-p">To work with startups, businesses and creators to realize their vision.</p><br/>
+                    <p class="display-p">From branding to strategy, web design to content, I help you make your ideas a reality.</p><br/>
+                    <p>Learn More</p>
+                </div>
             </div>
         </section>
 
+        <section id="services">
+            <div class="row">
+                <h2 class="pb-1">THE 4 E<span class="colorwave">XP</span>ERIENCES</h2>
+                <p class="display-p">I help startups, businesses, and artists realize their vision.</p>
+
+                <div class="service-row pt-3">
+                    <div class="service-item">
+                        <img src="./images/branding.png" class="serviceImg">
+                        <p class="icon-title">Branding <sup>XP</sup></p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/user.png" class="serviceImg">
+                        <p class="icon-title">User <sup>XP</sup></p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/business.png" class="serviceImg">
+                        <p class="icon-title">Business <sup>XP</sup></p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/product.png" class="serviceImg">
+                        <p class="icon-title">Product <sup>XP</sup></p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="customers">
+            <div class="row">
+                <h2>WHO I'VE WORKED WITH</h2>
+                <div class="service-row">
+                    <div class="service-item">
+                        <img src="./images/branding.png" class="serviceImg">
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/branding.png" class="serviceImg">
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/branding.png" class="serviceImg">
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/branding.png" class="serviceImg">
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/branding.png" class="serviceImg">
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/branding.png" class="serviceImg">
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/branding.png" class="serviceImg">
+                    </div>
+                    <div class="service-item">
+                        <img src="./images/branding.png" class="serviceImg">
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 
-    <!--Javascript-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 
     <!--[htmlclean-protect]-->
     <!-- inject:js -->

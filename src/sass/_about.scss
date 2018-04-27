@@ -1,0 +1,22 @@
+#about {
+  background-color:#21409a;
+  color:white;
+  @include backgroundImage ("/images/aboutBG.png",100vh);
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.description {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+
+.left {
+    flex:0 0 60%;
+    text-align:left;
+    padding-left:3rem;
+}

@@ -1,59 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700");
 @font-face {
   font-family: "Franchise";
   src: url("../fonts/franchise-bold.ttf"); }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 /*----- Global Styles/Settings -----*/
 html {
   font-size: 18px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Playfair Display", sans-serif; }
+
+body {
+  background-color: #f9f9f9; }
 
 img {
   display: block;
@@ -65,41 +21,247 @@ img {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 100%;
   box-sizing: border-box; }
   *:before, *:after {
     box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Franchise", sans-serif; }
+
+p {
+  font-family: "Playfair Display", sans-serif; }
+
+h2 {
+  font-size: 3.5rem; }
+
+.display-p {
+  font-size: 1.5rem; }
+
+.icon-title {
+  font-size: 1.5rem;
+  font-family: "Franchise", sans-serif; }
+
+.row {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+/*----------Margin top, bottom, left, right, x and y ----------------*/
+.mt-1 {
+  margin-top: 1rem; }
+
+.mt-2 {
+  margin-top: 2rem; }
+
+.mt-3 {
+  margin-top: 3rem; }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.ml-1 {
+  margin-left: 1rem; }
+
+.ml-2 {
+  margin-left: 2rem; }
+
+.ml-3 {
+  margin-left: 3rem; }
+
+.mr-1 {
+  margin-right: 1rem; }
+
+.mr-2 {
+  margin-right: 2rem; }
+
+.mr-3 {
+  margin-right: 3rem; }
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+/*----------Padding top, bottom, left, right, x and y ----------------*/
+.pt-1 {
+  padding-top: 1rem; }
+
+.pt-2 {
+  padding-top: 2rem; }
+
+.pt-3 {
+  padding-top: 3rem; }
+
+.pb-1 {
+  padding-bottom: 1rem; }
+
+.pb-2 {
+  padding-bottom: 2rem; }
+
+.pb-3 {
+  padding-bottom: 3rem; }
+
+.p-l-1 {
+  padding-left: 1rem; }
+
+.p-l-2 {
+  padding-left: 2rem; }
+
+.p-l-3 {
+  padding-left: 3rem; }
+
+.pr-1 {
+  padding-right: 1rem; }
+
+.pr-2 {
+  padding-right: 2rem; }
+
+.pr-3 {
+  padding-right: 3rem; }
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 .logo-main {
   width: auto;
   height: 80px; }
 
+.topNav {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem !important; }
+
+.navImage {
+  margin-right: auto; }
+
 .navStyle {
   font-size: 1rem;
   font-weight: 700;
-  color: black !important;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-family: "Franchise", sans-serif; }
 
-.landingpage {
-  background-color: #f9f9f9;
+nav ul {
+  list-style: none; }
+  nav ul li a {
+    text-decoration: none;
+    color: black; }
+
+.landingPage {
   height: 100vh;
-  margin: 0; }
+  margin: 0;
+  margin-top: 80px; }
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .splashImage {
+  padding-top: 7rem;
   width: auto;
   height: 500px; }
-
-.downArrow {
-  padding-top: 5rem !important; }
 
 .fa-angle-down {
   color: #f26522; }
 
 #about {
-  height: 100vh;
   background-color: #21409a;
-  color: white; }
+  color: white;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url("/images/aboutBG.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+
+.left {
+  flex: 0 0 60%;
+  text-align: left;
+  padding-left: 3rem; }
+
+.colorwave {
+  color: #f26522; }
+
+.service-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.service-item {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.serviceImg {
+  height: 150px;
+  width: auto;
+  padding-bottom: 1rem; }
+
+.customers {
+  background-color: #21409a; }
 
 #loader {
   width: 100vw;

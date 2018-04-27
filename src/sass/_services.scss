@@ -1,0 +1,32 @@
+#services {
+    // height:100vh;
+}
+
+.colorwave {
+    color: $orange;
+}
+
+
+.service-row {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.service-item {
+    flex:0 0 25%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.serviceImg {
+    height:150px;
+    width:auto;
+    padding-bottom:1rem;
+}
+
+.customers {
+    background-color: $blue;
+}

@@ -1,0 +1,67 @@
+nav {
+  position:fixed;
+  top:0;
+  // background-color:#f9f9f9;
+  width:100%;
+}
+
+.logo-main {
+  width:auto;
+  height:80px;
+}
+
+.topNav {
+  display:flex;
+  align-items: center;
+  padding-top:1rem!important;
+}
+
+.navImage {
+  margin-right:auto;
+}
+
+.navStyle {
+  font-size:1rem;
+  font-weight:700;
+  padding-left:1rem;
+  padding-right:1rem;
+  font-family:$font-display;
+}
+
+nav {
+  ul {
+    list-style:none;
+    li a {
+      text-decoration: none;
+      color:black;
+    }
+  }
+}
+
+
+.landingPage {
+  height:100vh;
+  margin:0;
+  margin-top:80px;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.splashImage {
+  padding-top:7rem;
+  width:auto;
+  height:500px;
+}
+
+.downArrow {
+
+}
+
+.fa-angle-down {
+  color:$orange;
+}
